@@ -1,0 +1,25 @@
+{
+  "name": "github-sponsors-twitter-webhook",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.0.6",
+    "@octokit/webhooks": "^7.11.2",
+    "@types/twitter": "^1.7.0",
+    "node-fetch": "^2.6.1",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.0.2-beta2",
+    "typescript": "^3.3.3"
+  }
+}
